@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.root.build_model">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY"/>
+
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name=".StartupActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".DatabindActivity" />
+        <activity android:name="com.recycdemo.Main2Activity" />
+
+        <!--<receiver android:name=".PlayFragment$localBroadCastRecevice"-->
+            <!--android:enabled="true"-->
+            <!--android:exported="true">-->
+        <!--<intent-filter>-->
+            <!--<action android:name="com.example.root.build_model.ACTION_PLAY_PREVIOUS" />-->
+            <!--<action android:name="com.example.root.build_model.ACTION_PLAY_NEXT" />-->
+            <!--<action android:name="com.example.root.build_model.ACTION_FAVOUR" />-->
+        <!--</intent-filter>-->
+        <!--</receiver>-->
+        <!--<receiver-->
+            <!--android:name=".BlankFragment$LocalBroadcastReceiver"-->
+            <!--android:enabled="true"-->
+            <!--android:exported="false">-->
+            <!--<intent-filter>-->
+                <!--<action android:name="com.example.root.build_model.ACTION_PLAY_MODE_CHANGE" />-->
+                <!--<action android:name="com.example.root.build_model.ACTION_PLAY_PREVIOUS" />-->
+                <!--<action android:name="com.example.root.build_model.ACTION_PAUSE" />-->
+                <!--<action android:name="com.example.root.build_model.ACTION_PLAY" />-->
+                <!--<action android:name="com.example.root.build_model.ACTION_PLAY_NEXT" />-->
+                <!--&lt;!&ndash;<action android:name="com.example.root.build_model.ACTION_FAVOUR" />&ndash;&gt;-->
+
+            <!--</intent-filter>-->
+        <!--</receiver>-->
+
+        <!--<receiver android:name=".MainActivity$ExitReceiver"-->
+            <!--android:enabled="true"-->
+            <!--android:exported="true">-->
+            <!--<intent-filter>-->
+                <!--<action android:name="com.example.root.build_model.ACTION_EXIT_APP" />-->
+            <!--</intent-filter>-->
+        <!--</receiver>-->
+        <activity android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask">
+
+        </activity>
+        <service android:name=".MyService"
+            android:exported="true"
+            android:enabled="true"
+            android:process=":aidl">
+
+        </service>
+
+    </application>
+
+</manifest>

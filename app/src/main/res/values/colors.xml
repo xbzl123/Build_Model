@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="viewfinder_laser">#ffcc0000</color> <!-- Android standard ICS color -->
+    <color name="viewfinder_mask">#F0FFFF</color>
+    <color name="viewfinder_frame">#ff88ae00</color>
+    <color name="menu_text_color">#249bf0</color>
+    <color name="menu_text_color_up">#ffffff</color> <!-- 白色 -->
+    <color name="lightblue">#87CEFA</color> <!-- 亮天蓝色 -->
+    <color name="deepblue">#3366cc</color> <!-- 深蓝#003399 -->
+    <color name="black">#000000</color>
+    <color name="light">#48D1CC</color>
+    <color name="begonia_red">#DB5A6B</color> <!-- 海棠红 -->
+</resources>
